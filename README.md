@@ -250,16 +250,6 @@ Values after `±` are sample standard deviations across 500 scenarios.
 | DQN | 289 / 500 | 57.8% | 0.0% |
 | PPO | 4 / 500 | 0.8% | 0.0% |
 
-![Reward comparison](docs/assets/results/controller_reward_comparison.png)
-
-| Waiting | Throughput |
-|---|---|
-| ![Waiting comparison](docs/assets/results/waiting_time_comparison.png) | ![Throughput comparison](docs/assets/results/throughput_comparison.png) |
-
-| Maximum queue | Violations |
-|---|---|
-| ![Maximum queue comparison](docs/assets/results/max_queue_comparison.png) | ![Violation comparison](docs/assets/results/violation_comparison.png) |
-
 Within these 500 simulated scenarios, PPO had higher observed mean reward and
 throughput, lower observed waiting, shorter maximum queues, and fewer violations than
 DQN. This is a multi-metric empirical comparison, not a claim of optimality or
@@ -275,8 +265,6 @@ Paired values are calculated scenario by scenario as `PPO − DQN`:
 | Waiting metric | -136.72 | 22.07 | [-138.66, -134.79] |
 | Vehicles passed | +5.58 | 2.88 | [5.33, 5.84] |
 | Violations | -5.07 | 7.23 | [-5.71, -4.44] |
-
-![Paired PPO versus DQN differences](docs/assets/results/ppo_vs_dqn_paired_differences.png)
 
 The intervals quantify uncertainty in the estimated mean paired differences for these
 randomized scenarios. The project does not perform or claim an additional formal
